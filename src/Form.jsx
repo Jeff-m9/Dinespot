@@ -26,7 +26,9 @@ function Form() {
   // to handle submit
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("form submitted");
+      console.log("form submitted");
+      
+    //   using Fetch API to create a resource using POST-network request when the form is submited
 
     fetch("http://localhost:3000/restraunts", {
       method: "POST",
@@ -39,6 +41,8 @@ function Form() {
       .then((data) => {
         console.log(data);
       });
+
+    //   reseting the form
     setFormData(initialValues);
   };
 

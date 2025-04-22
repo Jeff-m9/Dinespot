@@ -1,20 +1,12 @@
 {
   "restraunts": [
     {
-      "id": "3395",
-      "name": "Quanamhoods",
-      "cuisine": "lunch",
-      "location": "lodwar",
-      "menu": "chapo beans",
-      "image": "https://www.fanbase.co.ke/image/cache/catalog/17-18%20football%20season/arsenal/men/24-25/Arsenal-Home-Football-Shirt-24-25-600x600.jpg"
-    },
-    {
-      "id": "5281",
-      "name": "Ngatur",
-      "cuisine": "lunch",
-      "location": "nairobi",
-      "menu": "rice beans",
-      "image": "https://img.kilimall.com/c/obs/seller/10829/goods_image/240914225810_f4815a8fb157e2c9d0f93290faab20a2.png?x-image-process=image/format,webp/resize,w_720#"
+      "id": "54c2",
+      "name": "Bella Vita",
+      "cuisine": "Italian",
+      "location": "Ronald Ngala Street, Nairobi",
+      "menu": "pizza",
+      "image": "https://i.ebayimg.com/images/g/Ed8AAOSwbvRmy8J-/s-l1600.webp"
     }
   ]
 }

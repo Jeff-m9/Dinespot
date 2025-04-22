@@ -26,7 +26,20 @@ function Form() {
   // to handle submit
   const handleSubmit = (e) => {
     e.preventDefault();
-      console.log("form submitted");
+    console.log("form submitted");
+
+    fetch("http://localhost:3000/restraunts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        console.log(data);
+      });
+    setFormData(initialValues);
   };
 
   return (

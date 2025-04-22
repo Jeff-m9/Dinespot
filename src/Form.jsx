@@ -26,8 +26,8 @@ function Form() {
   // to handle submit
   const handleSubmit = (e) => {
     e.preventDefault();
-      console.log("form submitted");
-      
+    console.log("form submitted");
+
     //   using Fetch API to create a resource using POST-network request when the form is submited
 
     fetch("http://localhost:3000/restraunts", {
@@ -49,41 +49,56 @@ function Form() {
   return (
     <div>
       <form onSubmit={handleSubmit} onChange={handleChange}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Enter the name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="cuisine"
-          placeholder="cuisine"
-          value={formData.cuisine}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="location"
-          placeholder="Enter location"
-          value={formData.location}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="menu"
-          placeholder="Menu"
-          value={formData.menu}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="image"
-          placeholder="Image"
-          value={formData.image}
-          onChange={handleChange}
-        />
+        <div>
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter the name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="cuisine"
+            placeholder="cuisine"
+            value={formData.cuisine}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="location"
+            placeholder="Enter location"
+            value={formData.location}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="menu"
+            placeholder="Menu"
+            value={formData.menu}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="image"
+            placeholder="Image"
+            value={formData.image}
+            onChange={handleChange}
+            required
+          />
+        </div>
         <button type="submit">Add</button>
       </form>
     </div>

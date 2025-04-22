@@ -47,9 +47,10 @@ function Form() {
   };
 
   return (
-    <div>
+    <div className="formContainer">
       <form onSubmit={handleSubmit} onChange={handleChange}>
         <div>
+          <p>Add Restaurant</p>
           <input
             type="text"
             name="name"

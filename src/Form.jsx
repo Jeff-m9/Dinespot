@@ -30,7 +30,7 @@ function Form() {
 
     //   using Fetch API to create a resource using POST-network request when the form is submited
 
-    fetch("http://localhost:3000/restraunts", {
+    fetch("http://localhost:3000/restaurants", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

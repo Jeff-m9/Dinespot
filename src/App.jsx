@@ -1,14 +1,13 @@
-
 import { useState, useEffect } from "react";
 import RestaurantList from "./components/RestaurantList";
 import RestaurantDetails from "./components/RestaurantDetails";
-import './App.css'
+import "./App.css";
 import Form from "./Form";
 import { SearchBar } from "./components/Search-bar";
 
 function App() {
-  const [restaurants, setRestaurants] = useState([]);//sets state of restaurants to an empty array
-  const [selectedRestaurant, setSelectedRestaurant] = useState(null);//sets state for the selected restaurants
+  const [restaurants, setRestaurants] = useState([]); //sets state of restaurants to an empty array
+  const [selectedRestaurant, setSelectedRestaurant] = useState(null); //sets state for the selected restaurants
 
   useEffect(() => {
     fetch("http://localhost:3000/restaurants") // db.json data
@@ -16,8 +15,9 @@ function App() {
       .then((data) => setRestaurants(data));
   }, []);
 
-  function handleRestaurantClick(restaurant) {//takes the restaurant object as an argument
-    setSelectedRestaurant(restaurant);//updates selected restaurant and renders when a restaurant is clicked
+  function handleRestaurantClick(restaurant) {
+    //takes the restaurant object as an argument
+    setSelectedRestaurant(restaurant); //updates selected restaurant and renders when a restaurant is clicked
   }
 
   return (

@@ -3,12 +3,21 @@ import React, { useState } from "react";
 export function SearchBar() {
   // State to hold the user's input from the search field
   const [searchInput, setSearchInput] = useState("");
+  //State to hold the filtered restaurant list
+  const [filteredList, setFilteredList] = useState([])
 
   // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("");
+    fetch("http://localhost:3000/restraunts")
+      .then((res) => res.json())
+      .then((data) => {
+        const filteredData = data.filter((restraunt) =>
+        restraunt.name.toLowerCase().includes(searchInput.toLowerCase()))
+      })
+      
+      setFilteredList(filteredData);
   };
 
   // Function to handle changes in the input field

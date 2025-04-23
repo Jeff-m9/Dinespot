@@ -1,6 +1,5 @@
-
 {
-  "restraunts": [
+  "restaurants": [
     {
       "id": "54c2",
       "name": "Bella Vita",
@@ -9,6 +8,6 @@
       "menu": "pizza",
       "image": "https://i.ebayimg.com/images/g/Ed8AAOSwbvRmy8J-/s-l1600.webp"
     }
+    
   ]
 }
-

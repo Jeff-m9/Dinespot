@@ -1,7 +1,14 @@
-import './App.css'
+import "./App.css";
+import Form from "./Form";
 
 function App() {
-  return 
+
+  
+  return (
+    <>
+      <Form></Form>
+    </>
+  );
 }
 
-export default App
+export default App;

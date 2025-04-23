@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from "react";
+import RestaurantList from "./components/RestaurantList";
+import RestaurantDetails from "./components/RestaurantDetails";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [restaurants, setRestaurants] = useState([]);//sets state of restaurants to an empty array
+  const [selectedRestaurant, setSelectedRestaurant] = useState(null);//sets state for the selected restaurants
+
+  useEffect(() => {
+    fetch("http://localhost:3000/restaurants") // db.json data
+      .then((r) => r.json())
+      .then((data) => setRestaurants(data));
+  }, []);
+
+  function handleRestaurantClick(restaurant) {//takes the restaurant object as an argument
+    setSelectedRestaurant(restaurant);//updates selected restaurant and renders when a restaurant is clicked
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div style={{ display: "flex" }}>
+      <div style={{ flex: 1, padding: "20px", borderRight: "10px solid #ccc" }}>
+        <h2>Restaurants</h2>
+        <RestaurantList
+          restaurants={restaurants}//passes the list of restaurants from state to the RestaurantList component as a prop
+          onRestaurantClick={handleRestaurantClick}//passes the handle click function that gets called when a restaurant is clicked
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div style={{ flex: 2, padding: "20px" }}>
+        <h2>Details</h2>
+        <RestaurantDetails restaurant={selectedRestaurant} />{/**displays details of a selected restaurant */}
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

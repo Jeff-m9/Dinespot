@@ -1,0 +1,8 @@
+{"restaurants":[{
+    "id":1,
+    "name":"Pronto",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzrBpifrVr7YsdUReyChqVE9rx4Q7GF0DI-A&s",
+    "location":"Nairobi",
+    "cuisine":"African",
+    "menu":"Fries,Chicken,Burgers"
+}]}

@@ -1,31 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 
-function Filter({ restaurants, cuisine }) {
+function Filter({ restaurants, setFilteredRestaurants }) {
   const [filter, setFilter] = useState("");
-  
-  const filteredRestaurants = restaurants.filter(
-    (r) => !filter || r.cuisine === filter
-  );
 
-    cuisine = filteredRestaurants;
+  useEffect(() => {
+    const filteredRestaurants = restaurants.filter(
+      (r) => !filter || r.cuisine === filter
+    );
+    setFilteredRestaurants(filteredRestaurants);
+  }, [filter, restaurants, setFilteredRestaurants]);
 
 
   return (
     <div>
-      {/* <h2>Restaurants</h2> */}
       <select onChange={(e) => setFilter(e.target.value)}>
         <option value="">All</option>
         <option value="Italian">Italian</option>
         <option value="African">African</option>
-        {/* <option value="Chilli">Chilli</option> */}
+        <option value="French">French</option>
       </select>
-      {/* <ul>
-        {filteredRestaurants.map((r) => (
-          <li key={r.id}>
-            {r.name} - {r.cuisine}
-          </li>
-        ))}
-      </ul> */}
     </div>
   );
 }

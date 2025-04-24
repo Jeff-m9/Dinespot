@@ -1,0 +1,13 @@
+{
+  "restaurants": [
+    {
+      "id": "54c2",
+      "name": "Bella Vita",
+      "cuisine": "Italian",
+      "location": "Ronald Ngala Street, Nairobi",
+      "menu": "pizza",
+      "image": "https://i.ebayimg.com/images/g/Ed8AAOSwbvRmy8J-/s-l1600.webp"
+    }
+    
+  ]
+}

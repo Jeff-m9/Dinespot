@@ -1,9 +1,12 @@
+
 import { useState, useEffect } from "react";
 import RestaurantList from "./components/RestaurantList";
 import RestaurantDetails from "./components/RestaurantDetails";
 import "./App.css";
 import Form from "./Form";
 import { SearchBar } from "./components/Search-bar";
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   const [restaurants, setRestaurants] = useState([]); //sets state of restaurants to an empty array
@@ -22,6 +25,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <SearchBar />
       <div style={{ display: "flex" }}>
         <div
@@ -40,6 +44,7 @@ function App() {
         </div>
       </div>
       <Form></Form>
+      <Footer />
     </>
   );
 }

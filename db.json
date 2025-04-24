@@ -5,8 +5,24 @@
       "name": "Bella Vita",
       "cuisine": "Italian",
       "location": "Ronald Ngala Street, Nairobi",
-      "menu": "pizza",
+      "special": "pizza",
       "image": "https://i.ebayimg.com/images/g/Ed8AAOSwbvRmy8J-/s-l1600.webp"
+    },
+    {
+      "id": "c260",
+      "name": "Jeff",
+      "cuisine": "African",
+      "location": "Nairobi",
+      "special": "nehgrhgrwhgiw",
+      "image": "https://musicart.xboxlive.com/7/806b5100-0000-0000-0000-000000000002/504/image.jpg"
+    },
+    {
+      "id": "ed37",
+      "name": "Ice cream",
+      "cuisine": "African",
+      "location": "Nairobi",
+      "special": "nehgrhgrwhgiw",
+      "image": "https://bitzngiggles.com/wp-content/uploads/2020/02/Rainbow-Ice-Cream-14-copy.jpg"
     }
     
   ]

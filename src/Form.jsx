@@ -4,12 +4,13 @@ const initialValues = {
   name: "",
   cuisine: "",
   location: "",
-  menu: "",
+  special: "",
   image: "",
 };
 
-function Form() {
+function Form({handleFetch}) {
   const [formData, setFormData] = useState(initialValues);
+  // console.log(formData)
 
   // to handle the inputs
   const handleChange = (e) => {
@@ -26,7 +27,7 @@ function Form() {
   // to handle submit
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("form submitted");
+    // console.log("form submitted");
 
     //   using Fetch API to create a resource using POST-network request when the form is submited
 
@@ -38,8 +39,8 @@ function Form() {
       body: JSON.stringify(formData),
     })
       .then((resp) => resp.json())
-      .then((data) => {
-        console.log(data);
+      .then(() => {
+        handleFetch();
       });
 
     //   reseting the form
@@ -48,7 +49,7 @@ function Form() {
 
   return (
     <div className="formContainer">
-      <form onSubmit={handleSubmit} onChange={handleChange}>
+      <form onSubmit={handleSubmit}>
         <div>
           <p>Add Restaurant</p>
           <input
@@ -83,9 +84,9 @@ function Form() {
         <div>
           <input
             type="text"
-            name="menu"
-            placeholder="Menu"
-            value={formData.menu}
+            name="special"
+            placeholder="special"
+            value={formData.special}
             onChange={handleChange}
             required
           />

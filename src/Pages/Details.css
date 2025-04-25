@@ -1,0 +1,8 @@
+#details-container {
+  background: linear-gradient(rgba(0,0,0,0.5)),url(https://dbackdrop.co.uk/cdn/shop/products/S-2883.jpg?v=1644646439);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+
+}

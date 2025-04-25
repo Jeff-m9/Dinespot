@@ -4,13 +4,15 @@ function RestaurantDetails({ restaurant }) {
   }
 
   return (
-    <div>
-      <h3>{restaurant.name}</h3>
-      <img
-        src={restaurant.image}
-        alt={restaurant.name}
-        
-      />
+    <div className="text-3xl text-white">
+      <h1 className="text-5xl font-bold">{restaurant.name}</h1>
+      <div>
+        <img
+          src={restaurant.image}
+          alt={restaurant.name}
+          className="items-center w-200 h-150 mx-auto mt-3 mb-3 rounded-xl"
+        />
+      </div>
       <p>
         <strong>Location:</strong> {restaurant.location}
       </p>
@@ -18,7 +20,7 @@ function RestaurantDetails({ restaurant }) {
         <strong>Cuisine:</strong> {restaurant.cuisine}
       </p>
       <p>
-        <strong>Menu:</strong> {restaurant.menu}
+        <strong>Special:</strong> {restaurant.special}
       </p>
     </div>
   );

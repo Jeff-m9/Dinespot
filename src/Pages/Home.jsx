@@ -1,17 +1,16 @@
 import { useState, useEffect } from "react";
 import RestaurantList from "../components/RestaurantList";
 import "../App.css";
-import Form from "../Form";
 import { SearchBar } from "../components/Search-bar";
 import Filter from "../components/Filter";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import "./Home.css"
 
 function HomePage() {
   const [restaurants, setRestaurants] = useState([]); //sets state of restaurants to an empty array
   const [filteredRestaurants, setFilteredRestaurants] = useState([]); //sets state of filtered restaurants
-  const [selectedRestaurant, setSelectedRestaurant] = useState(null); //sets state for the selected restaurants
-
+  
   const handleFetch = () => {
     fetch("http://localhost:3000/restaurants") // db.json data
       .then((r) => r.json())
@@ -25,15 +24,10 @@ function HomePage() {
     handleFetch();
   }, []);
 
-  function handleRestaurantClick(restaurant) {
-    //takes the restaurant object as an argument
-    setSelectedRestaurant(restaurant); //updates selected restaurant and renders when a restaurant is clicked
-  }
-
   return (
-    <>
+    <div>
       <Header />
-      <div>
+      <div className="flex justify-between items-center p-5">
         <SearchBar
           restaurants={restaurants}
           setFilteredRestaurants={setFilteredRestaurants}
@@ -44,25 +38,18 @@ function HomePage() {
         />
       </div>
 
-      <div style={{ display: "flex" }}>
-        <div
-          style={{ flex: 1, padding: "20px", borderRight: "10px solid #ccc" }}
-        >
-          <h2>Restaurants</h2>
+      <div className="flex">
+        <div className="flex-1 p-5">
+          <h2 className="font-bold text-3xl">Restaurants</h2>
           <RestaurantList
             restaurants={filteredRestaurants} //passes the list of filtered restaurants from state to the RestaurantList component as a prop
-            onRestaurantClick={handleRestaurantClick} //passes the handle click function that gets called when a restaurant is clicked
+            handleFetch={handleFetch}
           />
-          {/* <div style={{ flex: 2, padding: "20px" }}>
-            <h2>Details</h2>
-            <RestaurantDetails restaurant={selectedRestaurant} /> */}
-            {/**displays details of a selected restaurant */}
-          {/* </div> */}
         </div>
       </div>
-      <Form handleFetch={handleFetch} />
+
       <Footer />
-    </>
+    </div>
   );
 }
 

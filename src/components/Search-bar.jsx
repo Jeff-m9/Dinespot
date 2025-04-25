@@ -24,7 +24,7 @@ export function SearchBar({ restaurants, setFilteredRestaurants }) {
         placeholder="Search Restaurant"
         onChange={handleChange}
         value={searchInput}
-        className="px-3 py-2 border border-gray-300 rounded-lg shadow-sm mt-5 w-196"
+        className="px-3 py-3 bg-gray-200 rounded-lg shadow-sm mt-5 w-150 text-2xl"
       />
   );
 }

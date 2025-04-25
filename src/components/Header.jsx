@@ -1,20 +1,15 @@
 import { Link } from "react-router-dom";
+import "./Header.css"
 
 const Header = () => {
   return (
-    <header className="bg-white text-center text-black">
+    <header className="bg-white text-center text-black p-5">
       <div className="flex justify-between items-center">
-        <h1 className="font-bold text-xl">Dinespot</h1>
+        <h1 className="font-bold text-5xl">Dinespot</h1>
         <nav className="space-x-4">
-          <Link to={"/"}>
-            <button className="hover: cursor-pointer">Home</button>
+          <Link to="/form" className="rounded-lg bg-gray-400 p-2 text-2xl">
+            Add Restaurant
           </Link>
-          <a href="#menu" className="hover.underline">
-            Menu
-          </a>
-          <a href="#contact" className="hover.underline">
-            Contact
-          </a>
         </nav>
       </div>
     </header>

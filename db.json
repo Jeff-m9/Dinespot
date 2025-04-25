@@ -1,28 +1,84 @@
 {
   "restaurants": [
     {
-      "id": "54c2",
-      "name": "Bella Vita",
+      "id": "54b7",
+      "name": "Cote Brasserie",
+      "cuisine": "French",
+      "location": "France",
+      "special": "Steak Tartare",
+      "image": "https://www.cote.co.uk/_next/image?url=https%3A%2F%2Fcote-renaissance-be.azurewebsites.net%2Fwp-content%2Fuploads%2F2025%2F02%2Ftestimonials-prx-fixe-1.jpg&w=3840&q=75"
+    },
+    {
+      "id": "697d",
+      "name": "Clay Oven",
+      "cuisine": "Indian",
+      "location": "Westlands, Nairobi",
+      "special": "Tandoori Mix Kebabs Platter",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipNAJxjsJ6RAYdsWPScDLh6pJR1EcS9c5-1jBvXi=s1360-w1360-h1020"
+    },
+    {
+      "id": "fde6",
+      "name": "Mama Oliech",
+      "cuisine": "African",
+      "location": "Ngong rd, Nairobi",
+      "special": "Deep Fried Tilapia and Brown Ugali",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipO3tUEjMscPk7-LBjDaHjuul6mcnSIUmU5wztCJ=w640-h640-n-k-no"
+    },
+    {
+      "id": "c5f9",
+      "name": "La Terrazza Italian",
       "cuisine": "Italian",
-      "location": "Ronald Ngala Street, Nairobi",
-      "special": "pizza",
-      "image": "https://i.ebayimg.com/images/g/Ed8AAOSwbvRmy8J-/s-l1600.webp"
+      "location": "The Rhapta Promenade Mall Rhapta Road, Nairobi",
+      "special": "Beef Carpaccio Cipriani Style",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipONjdRJd50GQksM6sGadPblFMmuYJ2TfozBxV8Y=s1360-w1360-h1020"
     },
     {
-      "id": "c260",
-      "name": "Jeff",
-      "cuisine": "African",
-      "location": "Nairobi",
-      "special": "nehgrhgrwhgiw",
-      "image": "https://musicart.xboxlive.com/7/806b5100-0000-0000-0000-000000000002/504/image.jpg"
+      "id": "d933",
+      "name": "Taste of China",
+      "cuisine": "Chinese",
+      "location": "Parklands, Nairobi",
+      "special": "Chicken Chowmein",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipMmABjZpeV90TeXwIq9rkYdvXiKB2jaezBHx6oh=s1360-w1360-h1020"
     },
     {
-      "id": "ed37",
-      "name": "Ice cream",
+      "id": "6367",
+      "name": "Le Grenier À Pain",
+      "cuisine": "French",
+      "location": "Riverside Dr, Nairobi",
+      "special": "Quiche Lorraine",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipMHw9wO8nSRbEpOmQbd8mWvnmmSRMweH2mcyt1X=s1360-w1360-h1020"
+    },
+    {
+      "id": "19c9",
+      "name": "Swaad",
+      "cuisine": "Indian",
+      "location": "Nairobi Hwy, Nairobi",
+      "special": "Kothu Parotta",
+      "image": "https://lh3.googleusercontent.com/p/AF1QipOkroh-Nc9vFQN5xjoxYk6zl-HvYsUoEpq7NXNX=s1360-w1360-h1020"
+    },
+    {
+      "id": "b754",
+      "name": "K'Osewe",
       "cuisine": "African",
-      "location": "Nairobi",
-      "special": "nehgrhgrwhgiw",
-      "image": "https://bitzngiggles.com/wp-content/uploads/2020/02/Rainbow-Ice-Cream-14-copy.jpg"
+      "location": "Westlands, Nairobi",
+      "special": "Nyama Choma Special",
+      "image": "https://ucarecdn.com/941317d5-61e6-41a0-95da-d4142b06faf2/-/crop/1920x1007/0,36/-/resize/1200x630/-/resize/x300/"
+    },
+    {
+      "id": "64cb",
+      "name": "La Dolce Vita",
+      "cuisine": "Italian",
+      "location": "Limuru Rd, Nairobi",
+      "special": "Mozzarella Vesuviana",
+      "image": "https://c.ndtvimg.com/2021-04/umk8i7ko_pasta_625x300_01_April_21.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886"
+    },
+    {
+      "id": "d760",
+      "name": "Fang Fang ",
+      "cuisine": "Chinese",
+      "location": "Kilimani",
+      "special": "Vegetable Dumplings",
+      "image": "https://cookingwithcocktailrings.com/wp-content/uploads/2021/02/Pork26ChiveCrispyDumplings-48-500x375.jpg"
     }
   ]
 }

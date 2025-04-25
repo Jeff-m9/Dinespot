@@ -1,0 +1,7 @@
+footer {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz8VTRt5riv3mjeuroH2txLAbjefaHVyKZdw&s);
+  height: 40px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}

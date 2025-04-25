@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import RestaurantList from "./components/RestaurantList";
 import RestaurantDetails from "./components/RestaurantDetails";
 import "./App.css";
-import Form from "./Form";
+import Form from "./Pages/Form";
 import { SearchBar } from "./components/Search-bar";
 import Filter from "./components/Filter";
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   const [restaurants, setRestaurants] = useState([]); //sets state of restaurants to an empty array
@@ -20,7 +20,7 @@ function App() {
         setRestaurants(data);
         setFilteredRestaurants(data); // Initialize the filtered list with the full data
       });
-  }
+  };
 
   useEffect(() => {
     handleFetch();
@@ -39,7 +39,10 @@ function App() {
           restaurants={restaurants}
           setFilteredRestaurants={setFilteredRestaurants}
         />
-        <Filter restaurants={restaurants} setFilteredRestaurants={setFilteredRestaurants} />
+        <Filter
+          restaurants={restaurants}
+          setFilteredRestaurants={setFilteredRestaurants}
+        />
       </div>
 
       <div style={{ display: "flex" }}>

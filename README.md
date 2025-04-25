@@ -1,12 +1,41 @@
-# React + Vite
+# Dinespot App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Authors
 
-Currently, two official plugins are available:
+Jeff Mbithi, Bildad Ereggae, Brian Bett, Maureen Nkirote, Carol Kosgei
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Description
 
-## Expanding the ESLint configuration
+Dinespot is a react web application that allows users to browse for restaurants. Users can search for restaurants, filter by cuisine, and view detailed descriptions of the restaurants. The project is built using react with a JSON server providing backend functionality.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Setup Instructions
+
+### Installation Steps
+
+1. Clone the repository:
+
+   git clone https://github.com/Jeff-m9/Dinespot.git
+
+2. Navigate to the project directory:
+
+   cd Dinespot
+
+3. Install JSON Server (if not already installed):
+
+   npm install -g json-server
+
+4. Start the JSON Server:
+
+   json-server --watch db.json --port 3000
+
+5. Open `index.html` in your browser or use Live Server (if using VS Code).
+
+## Live Site
+
+Check out the live version on GitHub Pages: [Dinespot App](https://dinespot.vercel.app/)
+
+
+## Copyright
+
+&copy; 2025 Dinespot App. All rights reserved.
+

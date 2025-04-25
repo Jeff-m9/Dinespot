@@ -40,7 +40,7 @@ function Form({handleFetch}) {
 
     //   using Fetch API to create a resource using POST-network request when the form is submited
 
-    fetch("http://localhost:3000/restaurants", {
+    fetch("https://680b4e5fd5075a76d98a9b41.mockapi.io/restaurants", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ function Form({handleFetch}) {
       .then((resp) => resp.json())
       .then(() => {
         handleFetch();
-      })
+      });
  
 
     //   reseting the form

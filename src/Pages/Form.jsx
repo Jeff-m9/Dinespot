@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/ReactToastify.css"
 import { toast } from "react-toastify";
-import "./Form.css"
+
 
 
 const initialValues = {
@@ -72,7 +72,7 @@ function Form({handleFetch}) {
 
       <form onSubmit={handleSubmit}>
         <div className="mt-5">
-          <p className="text-4xl font-bold text-white">Add Restaurant</p>
+          <p className="text-4xl font-bold">Add Restaurant</p>
           <input
             type="text"
             name="name"

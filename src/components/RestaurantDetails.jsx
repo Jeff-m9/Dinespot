@@ -4,7 +4,7 @@ function RestaurantDetails({ restaurant }) {
   }
 
   return (
-    <div className="text-3xl text-white">
+    <div className="text-3xl">
       <h1 className="text-5xl font-bold">{restaurant.name}</h1>
       <div>
         <img

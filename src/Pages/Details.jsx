@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import RestaurantDetails from "../components/RestaurantDetails";
 import { Link } from "react-router-dom";
-import "./Details.css"
+
 
 
 function DetailsPage() {

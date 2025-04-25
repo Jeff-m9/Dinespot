@@ -12,7 +12,7 @@ function HomePage() {
   const [filteredRestaurants, setFilteredRestaurants] = useState([]); //sets state of filtered restaurants
   
   const handleFetch = () => {
-    fetch("https://680b4e5fd5075a76d98a9b41.mockapi.io/restaurants") // db.json data
+    fetch("http://localhost:3000/restaurants") // db.json data
       .then((r) => r.json())
       .then((data) => {
         setRestaurants(data);

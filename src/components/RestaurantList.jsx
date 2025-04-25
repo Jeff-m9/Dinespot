@@ -1,17 +1,14 @@
 import { Link } from "react-router-dom";
-import "./RestaurantList.css"
+import "./RestaurantList.css";
 
 function RestaurantList({ restaurants, handleFetch }) {
   function handleDelete(restaurantId) {
-    fetch(
-      `https://680b4e5fd5075a76d98a9b41.mockapi.io/restaurants/${restaurantId}`,
-      {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    )
+    fetch(`http://localhost:3000/restaurants/${restaurantId}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
       .then((resp) => resp.json())
       .then(() => {
         handleFetch();
